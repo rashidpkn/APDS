@@ -103,7 +103,9 @@ exports.login = async (req, res) => {
           password,
         },
       });
-      found ? res.send(true) : res.send(false);
+      if (found) {
+        res.send(true)
+      } else res.send(false)
     } else res.send(false);
   } catch (error) {
     console.log(error.message);

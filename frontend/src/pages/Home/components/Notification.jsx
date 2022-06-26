@@ -12,7 +12,7 @@ function Notification() {
     }, [])
 
     return (
-        <div className='flex flex-col items-center w-full gap-5'>
+        <div className='flex flex-col items-center w-full md:w-1/2 gap-5'>
             <span className='text-4xl font-semibold'>Notification</span>
             <ul className='flex flex-col gap-4'>
                 {/* // eslint-disable-next-line  */}
@@ -26,7 +26,7 @@ export default Notification
 
 function NotificationList({ notification }) {
     return (
-        <li className='h-12 border border-black rounded-2xl flex justify-center items-center w-[90vw]'>{notification}</li>
+        <li className='h-12 border border-black rounded-2xl flex justify-center items-center w-96'>{notification}</li>
     )
 }
 

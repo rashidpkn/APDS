@@ -22,6 +22,7 @@ exports.getShop = async (req, res) => {
 
 //create a Shop
 exports.addShop = async (req, res) => {
+  console.log(req.body)
   try {
     const { rationShopNo, rationShopName, shopKeeperName, mobileNo, password } =
       req.body;
@@ -110,5 +111,5 @@ exports.login = async (req, res) => {
         res.send(true);
       } else res.send(false);
     } else res.send(false);
-  } catch (error) {}
+  } catch (error) { }
 };

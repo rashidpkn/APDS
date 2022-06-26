@@ -6,7 +6,7 @@ function LoginPlace() {
 
     const navigate = useNavigate()
     return (
-        <div className='flex flex-col items-center justify-center h-[40vh] gap-[20%]'>
+        <div className='flex flex-col items-center justify-center h-[100%] w-full md:w-1/2 gap-[20%]'>
             <div className="admin">
                 <button onClick={() => navigate('/admin')} className='border h-12 w-36 border-black rounded-3xl text-xl font-medium'>
                     Admin Login
